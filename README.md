@@ -1,4 +1,4 @@
-# ICP-Algorithm-on-FPGA
+# ICP-Algorithm-on-FPGA (Not Finished)
 
 We’ve designed RTL code using both AXI4 communication protocol and two Bram. The AXI4 communication protocol is for data transfer between Processing System(PS) and Programmable Logic(PL). Reference and Source points data, which consist of 8 bytes including number of data, x, and y position as fixed point, sent to PL from PS. During the data processing, both reference and source data are stored into Bram, which has a better speed of transferring data for high memory usage than registers on an FPGA. Bram has 40 bits for storing data and 11 bits for addresses. Therefore, the memory size of Bram is 2048 * 40 and used two Bram for both reference and source(aligned) data. After processing, the last source(aligned) data will be transferred to PS from PL.
 
